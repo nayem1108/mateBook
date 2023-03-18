@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mateBook</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    
+    <!-- navigation bar -->
+    <nav>
+        <div class="nav-left">
+            <h2 class="logo">mateBook</h2>
+            <!-- <img src="static/images/logos/matebook.png" class="logo" height="50px" width="100px"> -->
+            <ul>
+                <li><img src="static/images/notification.png" alt=""></li>
+                <li><img src="static/images/inbox.png" alt=""></li>
+                <li><img src="static/images/video.png" alt=""></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+
+            <div class="src-box">
+                <img src="static/images/search.png" alt="">
+                <input type="text" placeholder="Search ">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="static/images/profile-pic.png" alt="">
+            </div>
+        </div>
+
+        <!-- settings menu -->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="setting-menu-inner">
+
+                <div class="user-profile">
+                    <img src="static/images/profile-pic.png" alt="user profile">
+                    <div>
+                        <p>Nayem Uddin</p>
+                        <a href="#">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="static/images/feedback.png" alt="user profile">
+                    <div>
+                        <p> Give Feedback</p>
+                        <a href="#">Help us through your feedback</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="setting-links">
+                    <img src="static/images/setting.png" alt="" class="setting-img">
+                    <a href="#">Settings & Privacy <img src="static/images/arrow.png" alt="" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="static/images/help.png" alt="" class="setting-img">
+                    <a href="#">Help & Support <img src="static/images/arrow.png" alt="" width="10px"></a>
+                </div>
+
+                <div class="setting-links">
+                    <img src="static/images/display.png" alt="" class="setting-img">
+                    <a href="#">Accessibility<img src="static/images/arrow.png" alt="" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="static/images/logout.png" alt="" class="setting-img">
+                    <a href="#">Logout<img src="static/images/arrow.png" alt="" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <!-- left sidebar  -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="static/images/news.png" alt=""> Latest Posts</a>
+                <a href="#"><img src="static/images/friends.png" alt=""> Friends</a>
+                <a href="#"><img src="static/images/group.png" alt=""> Groups</a>
+                <a href="#"><img src="static/images/marketplace.png" alt=""> MarketPalce</a>
+                <a href="#"><img src="static/images/video.png" alt=""> Videos</a>
+                <a href="#" class="">See More</a>
+            </div>
+
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="static/images/shortcut-1.png" alt="">Web Developers</a>
+                <a href="#"><img src="static/images/shortcut-2.png" alt="">Web Design Community</a>
+                <a href="#"><img src="static/images/shortcut-3.png" alt="">Full Stack Development</a>
+                <a href="#"><img src="static/images/shortcut-4.png" alt="">Java Experts</a>
+            </div>
+        </div>
+
+        <!-- main content -->
+        <div class="main-content">
+
+            <!-- story section -->
+            <div class="story-gallery">
+                <div class="story user-story">
+                    <img src="static/images/upload.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story-1">
+                    <img src="static/images/member-4.png" alt="">
+                    <p>Member Name</p>
+                </div>
+                <div class="story story-2">
+                    <img src="static/images/member-3.png" alt="">
+                    <p>Member Name</p>
+                </div>
+                <div class="story story-3">
+                    <img src="static/images/member-2.png" alt="">
+                    <p>Member Name</p>
+                </div> 
+                <div class="story story-3">
+                    <img src="static/images/member-6.png" alt="">
+                    <p>Member Name</p>
+                </div>
+                <!-- <div class="story story-4">
+                    <img src="static/images/member-5" alt="">
+                    <p>Member Name</p>
+                </div> -->
+            </div>
+
+            <!-- post section -->
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="static/images/profile-pic.png" alt="user profile">
+                    <div>
+                        <p>Nayem Uddin</p>
+                        <small>Public <i class="fas fa-caret-down"></i> </small>
+                    </div>
+                </div>
+
+
+                <div class="post-container">
+                    <textarea name="post" id="" rows="3" placeholder="What's on your mind, Nayem?"></textarea>
+                    
+                    <div class="add-post-links">
+                        <a href="#"><img src="static/images/live-video.png" alt="">Live</a>
+                        <a href="#"><img src="static/images/photo.png" alt="">Camera</a>
+                        <a href="#"><img src="static/images/feeling.png" alt="">Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- posts -->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="static/images/profile-pic.png" alt="user profile">
+                        <div>
+                            <p>Ahmed Fahim</p>
+                            <span>
+                                Just Now 
+                            </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"> sequi nulla ut qui maxime ipsum modi! <a href="#">See More</a></p>
+                <img src="static/images/feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="static/images/like-blue.png" alt="">120</div>
+                        <div><img src="static/images/comments.png" alt="">50</div>
+                        <div><img src="static/images/share.png" alt="">0</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="static/images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="static/images/profile-pic.png" alt="user profile">
+                        <div>
+                            <p>Shahriar Khan</p>
+                            <span>
+                                5 Min Ago
+                            </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"> sequi nulla ut qui maxime ipsum modi! <a href="#">See More</a></p>
+                <img src="static/images/feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="static/images/like-blue.png" alt="">120</div>
+                        <div><img src="static/images/comments.png" alt="">50</div>
+                        <div><img src="static/images/share.png" alt="">0</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="static/images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="static/images/profile-pic.png" alt="user profile">
+                        <div>
+                            <p>Nayem Uddin</p>
+                            <span>
+                                June 24 2023, 18:34 
+                            </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"> sequi nulla ut qui maxime ipsum modi! <a href="#">See More</a></p>
+                <img src="static/images/feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="static/images/like-blue.png" alt="">120</div>
+                        <div><img src="static/images/comments.png" alt="">50</div>
+                        <div><img src="static/images/share.png" alt="">0</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="static/images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="static/images/profile-pic.png" alt="user profile">
+                        <div>
+                            <p>Nayem Uddin</p>
+                            <span>
+                                June 24 2023, 18:34 
+                            </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"> sequi nulla ut qui maxime ipsum modi! <a href="#">See More</a></p>
+                <img src="static/images/feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="static/images/like-blue.png" alt="">120</div>
+                        <div><img src="static/images/comments.png" alt="">50</div>
+                        <div><img src="static/images/share.png" alt="">0</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="static/images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="static/images/profile-pic.png" alt="user profile">
+                        <div>
+                            <p>Nayem Uddin</p>
+                            <span>
+                                June 24 2023, 18:34 
+                            </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"> sequi nulla ut qui maxime ipsum modi! <a href="#">See More</a></p>
+                <img src="static/images/feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="static/images/like.png" alt="">120</div>
+                        <div><img src="static/images/comments.png" alt="">50</div>
+                        <div><img src="static/images/share.png" alt="">0</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="static/images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="static/images/profile-pic.png" alt="user profile">
+                        <div>
+                            <p>Nayem Uddin</p>
+                            <span>
+                                June 24 2023, 18:34 
+                            </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"> sequi nulla ut qui maxime ipsum modi! <a href="#">See More</a></p>
+                <img src="static/images/feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="static/images/like-blue.png" alt="">120</div>
+                        <div><img src="static/images/comments.png" alt="">50</div>
+                        <div><img src="static/images/share.png" alt="">0</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="static/images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="static/images/profile-pic.png" alt="user profile">
+                        <div>
+                            <p>Nayem Uddin</p>
+                            <span>
+                                June 24 2023, 18:34 
+                            </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"> sequi nulla ut qui maxime ipsum modi! <a href="#">See More</a></p>
+                <img src="static/images/feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="static/images/like-blue.png" alt="">120</div>
+                        <div><img src="static/images/comments.png" alt="">50</div>
+                        <div><img src="static/images/share.png" alt="">0</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="static/images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="static/images/profile-pic.png" alt="user profile">
+                        <div>
+                            <p>Nayem Uddin</p>
+                            <span>
+                                June 24 2023, 18:34 
+                            </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"> sequi nulla ut qui maxime ipsum modi! <a href="#">See More</a></p>
+                <img src="static/images/feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="static/images/like-blue.png" alt="">120</div>
+                        <div><img src="static/images/comments.png" alt="">50</div>
+                        <div><img src="static/images/share.png" alt="">0</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="static/images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="static/images/profile-pic.png" alt="user profile">
+                        <div>
+                            <p>Nayem Uddin</p>
+                            <span>
+                                June 24 2023, 18:34 
+                            </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"> sequi nulla ut qui maxime ipsum modi! <a href="#">See More</a></p>
+                <img src="static/images/feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="static/images/like-blue.png" alt="">120</div>
+                        <div><img src="static/images/comments.png" alt="">50</div>
+                        <div><img src="static/images/share.png" alt="">0</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="static/images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="static/images/profile-pic.png" alt="user profile">
+                        <div>
+                            <p>Nayem Uddin</p>
+                            <span>
+                                June 24 2023, 18:34 
+                            </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"> sequi nulla ut qui maxime ipsum modi! <a href="#">See More</a></p>
+                <img src="static/images/feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="static/images/like-blue.png" alt="">120</div>
+                        <div><img src="static/images/comments.png" alt="">50</div>
+                        <div><img src="static/images/share.png" alt="">0</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="static/images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="static/images/profile-pic.png" alt="user profile">
+                        <div>
+                            <p>Nayem Uddin</p>
+                            <span>
+                                June 24 2023, 18:34 
+                            </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"> sequi nulla ut qui maxime ipsum modi! <a href="#">See More</a></p>
+                <img src="static/images/feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="static/images/like-blue.png" alt="">120</div>
+                        <div><img src="static/images/comments.png" alt="">50</div>
+                        <div><img src="static/images/share.png" alt="">0</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="static/images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="static/images/profile-pic.png" alt="user profile">
+                        <div>
+                            <p>Nayem Uddin</p>
+                            <span>
+                                June 24 2023, 18:34 
+                            </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"> sequi nulla ut qui maxime ipsum modi! <a href="#">See More</a></p>
+                <img src="static/images/feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="static/images/like-blue.png" alt="">120</div>
+                        <div><img src="static/images/comments.png" alt="">50</div>
+                        <div><img src="static/images/share.png" alt="">0</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="static/images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <button class="load-more-btn">Load More</button>
+        </div>
+
+        <!-- right sidebar -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+
+            <!-- Events -->
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media Catch up</h4>
+                    <p> <i class="fa-solid fa-location-dot"></i>Dhaka Tech city</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Full Stack Development Guide line</h4>
+                    <p> <i class="fa-solid fa-location-dot"></i>City University</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+
+            <!-- Advertisement -->
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <!-- advertisement image  -->
+            <img src="static/images/advertisement.png" alt="" class="adds">
+
+            <!-- Chat box -->
+            <div class="sidebar-title">
+                <h4>Conversations</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="static/images/member-1.png" alt="">
+                </div>
+                <p>Angela Aba</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="static/images/member-2.png" alt="">
+                </div>
+                <p>Alison Baker</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="static/images/member-3.png" alt="">
+                </div>
+                <p>Neymar Jr</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <p>Copyright 2023 - mateBook</p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/93a00c0544.js" crossorigin="anonymous"></script>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
